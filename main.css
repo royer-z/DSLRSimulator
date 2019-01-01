@@ -1,0 +1,23 @@
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#cameraScreen {
+	display: inline-block;
+}
+
+#cameraRadial {
+	display: inline-block;
+}
+
+#wheelDiv {
+	height: 500px;
+	width: 500px;
+}
+
+#wheelDiv svg {
+	height: 100%;
+	width: 114%;
+}
