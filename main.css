@@ -4,24 +4,50 @@ html {
 	margin: 0;
 }
 
+#cameraBody {
+	background-color: #1E1E1E;
+	height: 57rem;
+}
+
 #cameraScreen {
 	display: inline-block;
-	height: 500px;
-	width: 500px;
+	height: 50.25rem;
+	width: 75rem;
 	background-color: #6A6A6A;
+	margin: 3rem;
 }
 
 #cameraRadial {
 	display: inline-block;
 	position: absolute;
+	top: 25rem;
+	right: 12rem;
 }
 
 #wheelDiv {
-	height: 500px;
-	width: 500px;
+	height: 22.5rem;
+	width: 22.5rem;
 }
 
 #wheelDiv svg {
 	height: 100%;
 	width: 114%;
+}
+
+[class|=wheelnav-wheelDiv] {
+    fill: #000000;
+}
+
+[class|=wheelnav-wheelDiv-title] {
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+
+[class|=wheelnav-wheelDiv-title] > tspan {
+    font-size: 1.5rem;
+}
+
+.wheelnav-wheelDiv-marker {
+	stroke: #FFFFFF;
+	stroke-width: .3125rem;
 }
