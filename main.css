@@ -6,7 +6,7 @@ html {
 
 #cameraBody {
 	background-color: #1E1E1E;
-	height: 57rem;
+	height: 100%
 }
 
 #cameraScreen {
@@ -15,6 +15,37 @@ html {
 	width: 75rem;
 	background-color: #6A6A6A;
 	margin: 3rem;
+	overflow: auto;
+}
+
+.album {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.picture {
+	height: 30%;
+	width: 30%;
+	margin-bottom: 1rem;
+	border: .2rem solid #000000;
+}
+
+.picture:hover {
+	border: .2rem solid #FFFFFF;
+}
+
+.expandedPicture {
+	height: 71%;
+	width: 60%;
+	position: absolute;
+	left: 5rem;
+	bottom: 10rem;
+	border: .2rem solid #000000;
+}
+
+.expandedPicture:hover {
+	border: .2rem solid #FFFFFF;
 }
 
 #cameraRadial {
