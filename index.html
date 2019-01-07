@@ -3,15 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DSLR Simulator</title>
+    <title>DSLR Camera Simulator</title>
 	<link href="main.css" type="text/css" rel="stylesheet">
-	<!-- Standards -->
-	<script type="text/javascript" src="wheelnav/raphael.min.js"></script>
-    <script type="text/javascript" src="wheelnav/wheelnav.min.js"></script>
-	<script type="text/javascript" src="nav.js"></script>
-	<!-- Styling -->
+	<!-- start import wheelnav.js -->
 	<script type="text/javascript" src="wheelnav/raphael.js"></script>
-	<script type="text/javascript" src="wheelnav/wheelnav.style.js"></script>
+    <script type="text/javascript" src="wheelnav/wheelnav.js"></script>
+	<!-- end import wheelnav.js -->
+	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 	<main id="cameraBody">
@@ -22,17 +20,15 @@
 			<article id="content">
 			</article>
         </section>
-        <nav id="cameraRadial">
-			<div id="wheelDiv" data-wheelnav data-wheelnav-marker data-wheelnav-markerpath="LineMarker" data-wheelnav-navangle="-180" data-wheelnav-cssmode>
-				<div data-wheelnav-navitemtext="home" onmouseup="home();"></div>
-				<div data-wheelnav-navitemtext="photo" onmouseup="photo();"></div>
-				<div data-wheelnav-navitemtext="video" onmouseup="video();"></div>
-				<div data-wheelnav-navitemtext="contact" onmouseup="contact();"></div>
-				<div data-wheelnav-navitemtext="about" onmouseup="about();"></div>
-				<div data-wheelnav-navitemtext=""></div>
-				<div data-wheelnav-navitemtext=""></div>
-			</div>
-        </nav>
+		<div id="wheelDiv" data-wheelnav data-wheelnav-marker data-wheelnav-markerpath="LineMarker" data-wheelnav-navangle="180" data-wheelnav-cssmode data-wheelnav-init>
+			<div data-wheelnav-navitemtext="home" onmouseup="home();"></div>
+			<div data-wheelnav-navitemtext="photo" onmouseup="photo();"></div>
+			<div data-wheelnav-navitemtext="video" onmouseup="video();"></div>
+			<div data-wheelnav-navitemtext="contact" onmouseup="contact();"></div>
+			<div data-wheelnav-navitemtext="about" onmouseup="about();"></div>
+			<div data-wheelnav-navitemtext=""></div>
+			<div data-wheelnav-navitemtext=""></div>
+		</div>
     </main>
 	<footer>
 		<p>&copy;&nbsp;Royer V. Zamudio 2018</p>

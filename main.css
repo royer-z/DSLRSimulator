@@ -1,21 +1,36 @@
-html {
-	height: 100%;
+* {
+	box-sizing: border-box;
+}
+
+body {
 	width: 100%;
+	height: 100%;
 	margin: 0;
+	position: absolute;
+	overflow: hidden;
 }
 
 #cameraBody {
 	background-color: #1E1E1E;
-	height: 100%
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 
 #cameraScreen {
-	display: inline-block;
-	height: 50.25rem;
-	width: 75rem;
+	width: 60%;
+	min-height: 75%;
 	background-color: #6A6A6A;
-	margin: 3rem;
-	overflow: auto;
+	overflow: hidden;
+	/* overflow: auto; If more images will be displayed */
+	display: inline-block;
+	position: relative;
+	top: 5%;
+	left: 2%;
+}
+
+#content {
+	position: relative;
 }
 
 .album {
@@ -25,44 +40,64 @@ html {
 }
 
 .picture {
-	height: 30%;
 	width: 30%;
-	margin-bottom: 1rem;
+	height: 30%;
 	border: .2rem solid #000000;
+	margin-bottom: 3%;
 }
 
 .picture:hover {
 	border: .2rem solid #FFFFFF;
 }
 
-.expandedPicture {
-	height: 71%;
-	width: 60%;
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #6A6A6A;
 	position: absolute;
-	left: 5rem;
-	bottom: 10rem;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.expandedPicture {
+	width: 60%;
+	height: 80%;
 	border: .2rem solid #000000;
+	position: relative;
+	top: 0;
 }
 
 .expandedPicture:hover {
 	border: .2rem solid #FFFFFF;
 }
 
-#cameraRadial {
-	display: inline-block;
-	position: absolute;
-	top: 25rem;
-	right: 12rem;
-}
-
 #wheelDiv {
-	height: 22.5rem;
-	width: 22.5rem;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	left: 10%;
+	display: inline-block;
 }
 
 #wheelDiv svg {
+	width: 100%;
 	height: 100%;
-	width: 114%;
+}
+
+@media (max-width: 1400px) { 
+	#wheelDiv {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+@media (max-width: 1000px) { 
+	#wheelDiv {
+		height: 100px;
+		width: 100px;
+	}
 }
 
 [class|=wheelnav-wheelDiv] {
@@ -75,10 +110,15 @@ html {
 }
 
 [class|=wheelnav-wheelDiv-title] > tspan {
-    font-size: 1.5rem;
+    font-size: 150%;
 }
 
 .wheelnav-wheelDiv-marker {
 	stroke: #FFFFFF;
-	stroke-width: .3125rem;
+	stroke-width: 4;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
 }

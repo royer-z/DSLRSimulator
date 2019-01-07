@@ -1,2 +1,4 @@
 width: 1920px 
-height: 969px
+height: 954px
+
+radius = halfDiv * x;
