@@ -26,7 +26,7 @@ function video() {
 function contact() {
 	var cameraScreen = document.getElementById("cameraScreen");
 	
-	cameraScreen.innerHTML = "<header><h1>Contact</h1></header><article id='content'></article>";
+	cameraScreen.innerHTML = "<header><h1>Contact</h1></header><article id='content'><form id='contactForm' action='contact.php' method='post'><input type='text' name='firstName' placeholder='First name'>&nbsp;&nbsp;<input type='text' name='lastName' placeholder='Last name'><br><input type='email' name='email' placeholder='Your email'><br><input type='text' name='subject' placeholder='Subject'><br><textarea name='message' placeholder='Message'></textarea><br><br><input type='submit' value='Send'></form></article>";
 }
 
 function about() {
