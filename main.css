@@ -1,3 +1,5 @@
+/* general */
+
 * {
 	box-sizing: border-box;
 }
@@ -72,6 +74,23 @@ body {
 	border: .2rem solid #FFFFFF;
 }
 
+/* contact form */
+
+#contactForm input, textarea{
+	padding: 2%;
+	margin-bottom: 2%
+}
+
+input:nth-child(-n+2) {
+	width: 50%;
+}
+
+input[type=email], input:nth-child(4), textarea {
+	width: 100%;
+}
+
+/* wheelnav */
+
 #wheelDiv {
 	width: 300px;
 	height: 300px;
@@ -117,6 +136,8 @@ body {
 	stroke: #FFFFFF;
 	stroke-width: 4;
 }
+
+/* footer */
 
 footer {
 	position: absolute;
