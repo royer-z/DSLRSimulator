@@ -1,4 +1,3 @@
-width: 1920px 
-height: 954px
+wheelDiv:
 
 radius = halfDiv * x;
