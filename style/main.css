@@ -35,6 +35,8 @@ body {
 	position: relative;
 }
 
+/* photo view */
+
 .album {
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -73,7 +75,11 @@ body {
 	border: .2rem solid #FFFFFF;
 }
 
-/* contact form */
+/* contact view */
+
+#contactForm {
+	position: relative;
+}
 
 #contactForm input, textarea{
 	padding: 2%;
@@ -86,6 +92,13 @@ input:nth-child(-n+2) {
 
 input[type=email], input:nth-child(4), textarea {
 	width: 100%;
+}
+
+input[type=submit] {
+	cursor: pointer;
+	border-radius: 50%;
+	position: relative;
+	left: 45%;
 }
 
 /* wheelnav */
@@ -104,14 +117,21 @@ input[type=email], input:nth-child(4), textarea {
 	height: 100%;
 }
 
-@media (max-width: 1400px) { 
+@media (max-width: 1000px) { 
 	#wheelDiv {
 		height: 200px;
 		width: 200px;
 	}
 }
 
-@media (max-width: 1000px) { 
+@media (max-width: 700px) { 
+	#wheelDiv {
+		height: 150px;
+		width: 150px;
+	}
+}
+
+@media (max-width: 500px) { 
 	#wheelDiv {
 		height: 100px;
 		width: 100px;
